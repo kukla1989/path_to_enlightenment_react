@@ -1,15 +1,26 @@
 import React from "react"
-
+import lampOn from './lamp_on.jpg';
 
 
 function Footer() {
-const styleFooter = {
-	backgraundColor: "#0000CD"
-}
-return (
-	<div>
+  const styleFooter = {		
+  position: "static",
+  left: "0",
+  bottom: "0",
+  width: "100%",
+  backgroundColor: "black",
+  color: "white",
+  textAlign: "center"
 
-	</div>
+
+	}
+
+return (
+		<div style={styleFooter}>
+		<br/>	
+		<h3> made by Kukla & Alex	</h3>
+		<br/>
+		</div>
 	)
 
 }
@@ -19,13 +30,5 @@ return (
 export default Footer
 
 
-{/*		{document.body.style = 'background: red;'}  {{backgraundColor: "#0000CD"} 
 
-
-
-<h3 style={{backgraundColor: 'blue'}}>  made by kukla </ h3>
-
-
-
-*/}
 

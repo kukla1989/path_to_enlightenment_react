@@ -7,12 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-footer {
-  background-color: #282c34;
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
   color: white;
-  padding: 40px;
-  font-family: Arial;
   text-align: center;
+
 }
 
 code {
