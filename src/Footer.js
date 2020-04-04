@@ -1,5 +1,5 @@
 import React from "react"
-import lampOn from './lamp_on.jpg';
+
 
 
 function Footer() {

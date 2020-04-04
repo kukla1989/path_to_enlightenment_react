@@ -7,6 +7,11 @@
   height: 40vmin;
 }
 
+#forStickFooter{
+    min-height: calc(100vh - 355px);
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,16 +27,7 @@
   color: #09d3ac;
 }
 
-.Footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
 
-}
 
 
 

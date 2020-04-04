@@ -1,3 +1,5 @@
+Даний проект є комерційним рішенням для сайта vega.ck.ua, дана компанія займається ремонтом, лєпкой для жилих приміщень.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
