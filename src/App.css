@@ -27,6 +27,11 @@
   color: #09d3ac;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 
 
