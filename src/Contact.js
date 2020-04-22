@@ -1,11 +1,28 @@
-import React from "react"
-import "./App.css"
+import React from 'react';
+import ReactDOM from 'react-dom'
+import './App.css';
+import Menu from './Menu.js'
+import Footer from './Footer.js'
+import Logo from './logo.png';
+import{BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 
 
 function Contact(){
+    
+      let links = [
+        { label: 'головна', link: '#home', active: true },
+        { label: 'галерея', link: 'http://google.com'  },
+        { label: 'о нас', link: Contact },
+        { label: 'Contact Us', link: '#contact-us' }
+      ]  
+
 
 	return(
 		<div>
+
+              <div className="container center">
+        <Menu links={links} logo={Logo} />
+      </div> 
 		       
     <div className="row">
     	<div >

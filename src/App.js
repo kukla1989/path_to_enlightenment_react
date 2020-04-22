@@ -1,31 +1,45 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom'
-import './App.css';
+import './App.css'
 import Menu from './Menu.js'
 import Footer from './Footer.js'
-import Logo from './logo.png';
+import Logo from './logo.png'
 import Contact from './Contact'
+import Home from './Home'
+import{BrowserRouter, Route, Switch, Link} from 'react-router-dom'
 
 class App extends React.Component {
 
   render(){
-      let links = [
-        { label: 'головна', link: '#home', active: true },
-        { label: 'галерея', link: 'http://google.com'  },
-        { label: 'о нас', link: Contact },
-        { label: 'Contact Us', link: '#contact-us' }
-    ] 
+    
 
   return (
-    <div className="content">
-        
-      <div className="container center">
-        <Menu links={links} logo={Logo} />
-      </div> 
-      <Contact/>
+    
+
+      <BrowserRouter>
+
+            <Link to="/contact">
+        <h1> contact </h1>
+      </Link>
+      <Link to="/">
+        <h1> home </h1>
+      </Link>
+      
+        <Switch>
+          <Route component={Home} exact path="/" />
+          <Route component={Contact} path="/contact" />
+
+        </Switch>
+
+
+     
+
+
+      
+
       <h1 id="forStickFooter"> </h1>
       <Footer />
-    </div>
+      </BrowserRouter>
   );
 }
 }
