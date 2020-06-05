@@ -1,10 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import './App.css';
 import Menu from './Menu.js'
 import Footer from './Footer.js'
 import Logo from './logo.png';
-import{BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 
 
 function Contact(){

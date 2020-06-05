@@ -1,0 +1,35 @@
+[33mcommit 0682e5928974b715dec2a666152c480001750247[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: kukla1989 <kukla.1989@ukr.net>
+Date:   Wed Apr 22 11:19:55 2020 +0300
+
+    add react router and configure it, separate home and contact page
+
+[33mcommit 265b403e1ece420f98d9b7c5fc4c73b28bdb57fb[m
+Author: kukla1989 <kukla.1989@ukr.net>
+Date:   Fri Apr 10 08:32:34 2020 +0300
+
+    add frontend part to contact us and some information about company
+
+[33mcommit ce5a957d7c87d9f5c8436a02e264834cecc35ceb[m
+Author: kukla1989 <kukla.1989@ukr.net>
+Date:   Sat Apr 4 19:29:55 2020 +0300
+
+    add logo,menu, stick footer
+
+[33mcommit 9ecc8add0d831da09714c220e1e15d32dd1b8d2d[m
+Author: kukla1989 <kukla.1989@ukr.net>
+Date:   Wed Apr 1 17:43:01 2020 +0300
+
+    add footer
+
+[33mcommit 8da29d203b5e74771f808185d1d0bc0bad23cff1[m
+Author: kukla1989 <kukla.1989@ukr.net>
+Date:   Tue Jan 7 13:23:39 2020 +0200
+
+    base and first try
+
+[33mcommit fab404e9ff63da5f5913562535c856784ef4496d[m
+Author: kukla1989 <kukla.1989@ukr.net>
+Date:   Thu Nov 28 22:23:33 2019 +0200
+
+    Initial commit from Create React App
