@@ -1,12 +1,35 @@
 import React from 'react';
 import './App.css';
 import Menu from './Menu.js'
-import Footer from './Footer.js'
 import Logo from './logo.png';
 
 
-function Contact(){
-    
+class Contact extends React.Component{
+      constructor() {
+            super()
+            this.state = { 
+                feedback: '',
+                name: '',
+                email: ''
+            } 
+         }
+
+
+ handleChange = (event) => {
+    this.setState({[event.target.name]: event.target.value})
+  }
+
+  //this method send email
+  handleSubmit = (event) => {
+    let variables = {feedback: this.state.feedback, name: this.state.name, email: this.state.email}
+    window.emailjs.send( 'gmail', 'neworder', variables).then(res => {
+        console.log('Email successfully sent!')
+    })
+    .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+  }
+
+
+      render(){
       let links = [
         { label: 'головна', link: '#home', active: true },
         { label: 'галерея', link: 'http://google.com'  },
@@ -14,8 +37,7 @@ function Contact(){
         { label: 'Contact Us', link: '#contact-us' }
       ]  
 
-
-	return(
+    return(
 		<div>
 
               <div className="container center">
@@ -27,16 +49,20 @@ function Contact(){
         
         	<form id="contact-form" className="contact-form" action="#">
             	<p className="contact-name">
-            		<input id="contact_name" type="text" placeholder="Ваше Имя" value="" name="name" />
+            		<input id="contact_name" type="text" placeholder="Ваше Имя" 
+                     onChange={this.handleChange} name="name" />
                 </p>
                 <p className="contact-email">
-                	<input id="contact_email" type="text" placeholder="Ваш E-mail адрес для обратной связи" value="" name="email" />
+                	<input id="contact_email" type="text" placeholder="Ваш E-mail адрес для обратной связи" 
+                    defaultValue={this.state.email} name="email" onChange={this.handleChange} />
                 </p>
                 <p className="contact-message">
-                	<textarea id="contact_message" placeholder="Ваше сообщение" name="message" rows="15" cols="40"></textarea>
+                	<textarea id="contact_message" placeholder="Ваше сообщение" name="feedback" rows="15" cols="40"
+                    onChange={this.handleChange}></textarea>
                 </p>
                 <p className="contact-submit">
-                	<a id="contact-submit" className="submit" href="test_page.html">Отправить сообщение</a>
+                	<input type="button" value="Отправить" className="submit" onClick={this.handleSubmit} />
+                   
                 </p>
                 
                 <div id="response">
@@ -59,9 +85,10 @@ function Contact(){
             </div>
         </div>
     </div>
-
+        <a> {this.state.name} </a>
 		</div>
-	)		
+	)	
+    }	
 }
 
 export default Contact
