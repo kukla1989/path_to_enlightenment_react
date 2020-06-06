@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/path_to_enlightenment_react/static/css/main.78783f8c.chunk.css",
+    "main.js": "/path_to_enlightenment_react/static/js/main.8958af0f.chunk.js",
+    "main.js.map": "/path_to_enlightenment_react/static/js/main.8958af0f.chunk.js.map",
+    "runtime-main.js": "/path_to_enlightenment_react/static/js/runtime-main.daecb466.js",
+    "runtime-main.js.map": "/path_to_enlightenment_react/static/js/runtime-main.daecb466.js.map",
+    "static/js/2.f7203598.chunk.js": "/path_to_enlightenment_react/static/js/2.f7203598.chunk.js",
+    "static/js/2.f7203598.chunk.js.map": "/path_to_enlightenment_react/static/js/2.f7203598.chunk.js.map",
+    "index.html": "/path_to_enlightenment_react/index.html",
+    "precache-manifest.23c41ef8a4b89c60ebe984b379dd2d1c.js": "/path_to_enlightenment_react/precache-manifest.23c41ef8a4b89c60ebe984b379dd2d1c.js",
+    "service-worker.js": "/path_to_enlightenment_react/service-worker.js",
+    "static/css/main.78783f8c.chunk.css.map": "/path_to_enlightenment_react/static/css/main.78783f8c.chunk.css.map",
+    "static/js/2.f7203598.chunk.js.LICENSE.txt": "/path_to_enlightenment_react/static/js/2.f7203598.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/path_to_enlightenment_react/static/media/1.08ab0b90.jpg",
+    "static/media/logo.png": "/path_to_enlightenment_react/static/media/logo.2b42aefb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.daecb466.js",
+    "static/js/2.f7203598.chunk.js",
+    "static/css/main.78783f8c.chunk.css",
+    "static/js/main.8958af0f.chunk.js"
+  ]
+}
