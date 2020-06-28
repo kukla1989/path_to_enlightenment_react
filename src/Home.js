@@ -1,21 +1,11 @@
 import React from 'react';
 import './App.css';
-import Menu from './Menu.js'
-import Logo from './logo.png';
 import Gallery from 'react-grid-gallery';
 import thumbnail1 from './img/thumbnail/1.jpg'
 import fullImage from './img/full/1.jpg'
 
 
-function Home(){
-    
-      let links = [
-        { label: 'головна', link: '#home', active: true },
-        { label: 'галерея', link: 'http://google.com'  },
-        { label: 'о нас', link: "dsfg" },
-        { label: 'Contact Us', link: '#contact-us' }
-      ]  
-
+function Home(){    
       const IMAGES =
 [{
         src: fullImage,
@@ -34,10 +24,7 @@ function Home(){
 	return(
 		<div>
        <div className="container center">
-        <Menu links={links} logo={Logo} />
-
       </div>    
-        <h1>home page </h1>
         <Gallery images={IMAGES}/>  
     </div>
     )
